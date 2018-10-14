@@ -1,0 +1,31 @@
+<App>
+    <JavaScript>
+        var OneSignal = require('OneSignal');
+
+        OneSignal.on('registrationSucceeded', function(regInfo){
+            console.log("registration succeded and registration info are", regInfo);
+        })
+
+        OneSignal.on('notificationReceived', function(notification){
+            console.log("notification was received and notification is", notification);
+        })
+
+        OneSignal.on('notificationOpened', function(notification){
+            console.log("notification was opened and notification is", notification);
+        })
+
+        OneSignal.sendTag("test", "test1");
+        OneSignal.sendTag("test2", "test2");
+
+        OneSignal.getTags()
+            .then(tags => {
+                console.log(tags);
+            })
+            .catch(e => {
+                console.log(e.toString());
+            })
+    </JavaScript>
+    <ClientPanel>
+        <Text Value="Test" Alignment="Center" />
+    </ClientPanel>
+</App>

@@ -1,0 +1,21 @@
+{
+  "RootNamespace":"me.mohammedmanssour.osintegration",
+  "Packages": [
+    "Fuse",
+    "FuseJS"
+  ],
+  "Android" : {
+    "Package": "me.mohammedmanssour.osintegration"
+  },
+  "OneSignal": {
+    "Android" : {
+      "AppID": "31bf1f74-1b88-4038-91d4-7fcb91752418"
+    }
+  },
+  "Includes": [
+    "*"
+  ],
+  "Projects": [
+    "../src/OSIntegration.unoproj"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Packages": [
+    "Fuse",
+    "FuseJS"
+  ],
+  "Includes": [
+    "*",
+    "Android/Java/NotificationOpenedHandler.java:Java:Android",
+    "Android/Java/NotificationReceivedHandler.java:Java:Android",
+    "Android/Java/SubscriptionObserver.java:Java:Android",
+  ]
+}
